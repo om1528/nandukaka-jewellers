@@ -1,0 +1,52 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#faf8f4;color:#30281f}
+.header{padding:14px 7%;background:#fff;display:flex;align-items:center;border-bottom:1px solid #e4d9c7;position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#30281f}
+.brand-mark-img{width:65px;height:65px;object-fit:contain}
+.brand-text{display:flex;flex-direction:column}
+.brand-text b{font-family:Georgia,serif;font-size:24px;letter-spacing:2px}
+.brand-text small{font-size:10px;letter-spacing:3px;color:#8d6a2c;margin-top:4px}
+.hero{min-height:430px;padding:100px 10%;display:flex;align-items:center;background:linear-gradient(120deg,#2a1709,#795014,#b58528);color:#fff}
+.eyebrow,.section-title span{font-size:12px;letter-spacing:3px;color:#b27b1d;font-weight:bold}
+.hero .eyebrow{color:#f0c975}
+.hero h1{font-family:Georgia,serif;font-size:58px;line-height:1.1;margin:15px 0}
+.hero h1 em{color:#f1cf83}
+.hero-btn,.wa-btn{display:inline-block;background:#9b6816;color:#fff;text-decoration:none;padding:13px 24px;margin-top:22px}
+.section{padding:70px 8%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-family:Georgia,serif;font-size:42px;margin-top:10px}
+.section-title p{margin-top:10px;color:#6f665b}
+.metal-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.metal-card{border:1px solid #d9c8ad;background:#fff;display:grid;grid-template-columns:42% 58%;cursor:pointer;text-align:left;transition:.25s}
+.metal-card:hover,.category-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.metal-image{min-height:220px;display:grid;place-items:center;font:700 32px Georgia,serif}
+.gold .metal-image{background:linear-gradient(135deg,#4d2c08,#c79024);color:#ffe6a0}
+.silver .metal-image{background:linear-gradient(135deg,#777,#eee,#8c8c8c);color:#333}
+.metal-card>div:last-child{padding:30px}
+.metal-card small,.category-card small{color:#956818;letter-spacing:2px}
+.metal-card h3{font:600 34px Georgia,serif;margin:12px 0}
+.metal-card p{color:#956818;font-weight:bold}
+.hidden{display:none!important}
+.back-btn{border:0;background:none;color:#956818;font-size:15px;font-weight:bold;cursor:pointer;margin-bottom:20px}
+.category-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.category-card{background:#fff;border:1px solid #ddceb8;padding:15px;cursor:pointer;text-align:left;min-height:180px;transition:.25s}
+.category-icon{height:90px;background:#f0e6d6;display:grid;place-items:center;font:600 22px Georgia,serif;color:#8d671f}
+.category-card h3{font:600 25px Georgia,serif;margin:15px 0 8px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product-card{background:#fff;border:1px solid #ddceb8}
+.product-card img{width:100%;aspect-ratio:1;object-fit:cover;background:#eee}
+.product-info{padding:12px}
+.product-info small{color:#777}
+.product-info h3{font-size:16px;margin:6px 0 10px}
+.product-info button{width:100%;padding:10px;background:#9b6816;color:#fff;border:0;cursor:pointer}
+.empty{grid-column:1/-1;text-align:center;padding:60px;border:1px dashed #cdbb9f}
+.scheme-section{text-align:center;background:#eee4d4}
+.affiliations-section{background:#f7f3ec}
+.affiliations-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.affiliation-card{background:#fff;border:1px solid #ddceb8;min-height:200px;padding:20px;display:flex;align-items:center;justify-content:center}
+.affiliation-card img{max-width:100%;max-height:160px;object-fit:contain}
+.contact-section{background:#2a180c;color:#fff;text-align:center}
+.contact-section p{margin-top:10px;color:#ddcfbe}
+footer{background:#1d1008;color:#cdbfae;text-align:center;padding:22px}
+@media(max-width:800px){.hero h1{font-size:42px}.metal-grid{grid-template-columns:1fr}.category-grid,.gallery-grid{grid-template-columns:repeat(2,1fr)}.affiliations-grid{grid-template-columns:1fr}}
+@media(max-width:500px){.header{padding:10px 4%}.brand-mark-img{width:48px;height:48px}.brand-text b{font-size:15px}.brand-text small{font-size:8px}.section{padding:50px 5%}.hero{padding:75px 7%}.hero h1{font-size:34px}.section-title h2{font-size:32px}.metal-card{grid-template-columns:1fr}}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandukaka MAID Jewellers & Sons</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#home">
+    <img class="brand-mark-img" src="images/logo.png" alt="Nandukaka Maid Jewellers Logo">
+    <div class="brand-text">
+      <b>NANDUKAKA MAID JEWELLERS</b>
+      <small>& SONS • AKOLE</small>
+    </div>
+  </a>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div>
+    <p class="eyebrow">NANDUKAKA MAID JEWELLERS & SONS</p>
+    <h1>Timeless Jewellery,<br><em>Beautifully Chosen.</em></h1>
+    <p>Explore our Gold and Silver jewellery collections.</p>
+    <a href="#collections" class="hero-btn">Explore Collections</a>
+  </div>
+</section>
+
+<section id="collections" class="section">
+  <div class="section-title">
+    <span>COLLECTIONS</span>
+    <h2>Choose a Collection</h2>
+  </div>
+  <div class="metal-grid">
+    <button class="metal-card gold" onclick="openMetal('gold')"><div class="metal-image">GOLD</div><div><small>GOLD COLLECTION</small><h3>Gold Jewellery</h3><p>View Collection →</p></div></button>
+    <button class="metal-card silver" onclick="openMetal('silver')"><div class="metal-image">SILVER</div><div><small>SILVER COLLECTION</small><h3>Silver Jewellery</h3><p>View Collection →</p></div></button>
+  </div>
+</section>
+
+<section id="groups" class="section hidden">
+  <button class="back-btn" onclick="goCollections()">← Gold & Silver</button>
+  <div class="section-title"><span id="groupLabel"></span><h2 id="groupTitle"></h2></div>
+  <div class="category-grid" id="groupGrid"></div>
+</section>
+
+<section id="subcategories" class="section hidden">
+  <button class="back-btn" onclick="goGroups()">← Back</button>
+  <div class="section-title"><span id="subLabel"></span><h2 id="subTitle"></h2></div>
+  <div class="category-grid" id="subGrid"></div>
+</section>
+
+<section id="gallery" class="section hidden">
+  <button class="back-btn" onclick="goSubcategories()">← Back</button>
+  <div class="section-title"><span id="galleryLabel"></span><h2 id="galleryTitle"></h2></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<section id="scheme" class="section scheme-section">
+  <div class="section-title"><span>SAVING SCHEME</span><h2>Swarnkarshan Sanchay Yojana</h2><p>Contact us for complete scheme information.</p></div>
+  <a class="wa-btn" href="https://wa.me/919503151404" target="_blank">WhatsApp Enquiry</a>
+</section>
+
+<section id="affiliations" class="section affiliations-section">
+  <div class="section-title"><span>AFFILIATIONS</span><h2>Our Affiliations</h2></div>
+  <div class="affiliations-grid">
+    <div class="affiliation-card"><img src="images/affiliations/manufacturer-of-india-gjf-2015-1.jpg" alt="Affiliation"></div>
+    <div class="affiliation-card"><img src="images/affiliations/all-india-gems-and-jewellery-trade-federation-gjf.jpg" alt="Affiliation"></div>
+    <div class="affiliation-card"><img src="images/affiliations/india-bullion-and-jewellers-association.jpg" alt="Affiliation"></div>
+  </div>
+</section>
+
+<section class="section contact-section">
+  <h2>Nandukaka MAID JEWELLERS & Sons</h2>
+  <p>Shani Temple Rd, Akole, Maharashtra 422601</p>
+  <a class="wa-btn" href="https://wa.me/919503151404" target="_blank">WhatsApp: 95031 51404</a>
+</section>
+</main>
+<footer>© 2026 Nandukaka MAID JEWELLERS & Sons • Akole</footer>
+<script src="image-list.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

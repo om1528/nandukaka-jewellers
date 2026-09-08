@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nandukaka MAID Jewellers & Son</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a class="brand"
+       href="#home">
+
+        <img
+            class="brand-mark-img"
+            src="images/logo.png"
+            alt="Nandukaka MAID Jewellers Logo">
+
+        <div class="brand-text">
+
+            <b>NANDUKAKA MAID JEWELLERS & SON</b>
+
+            <small>• AKOLE</small>
+
+        </div>
+
+    </a>
+
+</header>
+
+
+
+<main id="home">
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div>
+
+        <p class="eyebrow">
+            NANDUKAKA MAID JEWELLERS & SON
+        </p>
+
+        <h1>
+            Timeless Jewellery,
+            <br>
+
+            <em>
+                Beautifully Chosen.
+            </em>
+
+        </h1>
+
+        <p>
+            Explore our Gold and Silver jewellery collections.
+        </p>
+
+        <a href="#collections"
+           class="hero-btn">
+
+            Explore Collections
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= COLLECTIONS ================= -->
+
+<section id="collections"
+         class="section">
+
+
+    <div class="section-title">
+
+        <span>
+            COLLECTIONS
+        </span>
+
+        <h2>
+            Choose a Collection
+        </h2>
+
+        <p>
+            Explore our Gold and Silver jewellery.
+        </p>
+
+    </div>
+
+
+
+    <div class="metal-grid">
+
+
+        <!-- GOLD -->
+
+        <button
+            class="metal-card gold"
+            onclick="openMetal('gold')">
+
+            <div class="metal-image"></div>
+
+
+            <div class="metal-content">
+
+                <small>
+                    GOLD COLLECTION
+                </small>
+
+                <h3>
+                    Gold Jewellery
+                </h3>
+
+                <p>
+                    View Collection →
+                </p>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- SILVER -->
+
+        <button
+            class="metal-card silver"
+            onclick="openMetal('silver')">
+
+            <div class="metal-image"></div>
+
+
+            <div class="metal-content">
+
+                <small>
+                    SILVER COLLECTION
+                </small>
+
+                <h3>
+                    Silver Jewellery
+                </h3>
+
+                <p>
+                    View Collection →
+                </p>
+
+            </div>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= GROUPS ================= -->
+
+<section id="groups"
+         class="section hidden">
+
+
+    <button
+        class="back-btn"
+        onclick="goCollections()">
+
+        ← Gold & Silver
+
+    </button>
+
+
+
+    <div class="section-title">
+
+        <span id="groupLabel"></span>
+
+        <h2 id="groupTitle"></h2>
+
+        <p>
+            Choose a collection.
+        </p>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT LOADS GENTS / LADIES / KIDS / DEVOTIONAL -->
+
+    <div
+        class="category-grid"
+        id="groupGrid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= JEWELLERY TYPES ================= -->
+
+<section id="subcategories"
+         class="section hidden">
+
+
+    <button
+        class="back-btn"
+        onclick="goGroups()">
+
+        ← Back
+
+    </button>
+
+
+
+    <div class="section-title">
+
+        <span id="subLabel"></span>
+
+        <h2 id="subTitle"></h2>
+
+        <p>
+            Select a jewellery category.
+        </p>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT LOADS RINGS / CHAINS / ETC -->
+
+    <div
+        class="category-grid"
+        id="subGrid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= PHOTO GALLERY ================= -->
+
+<section id="gallery"
+         class="section hidden">
+
+
+    <button
+        class="back-btn"
+        onclick="goSubcategories()">
+
+        ← Back
+
+    </button>
+
+
+
+    <div class="section-title">
+
+        <span id="galleryLabel">
+            COLLECTION
+        </span>
+
+        <h2 id="galleryTitle">
+            Jewellery Designs
+        </h2>
+
+        <p id="galleryCount"></p>
+
+    </div>
+
+
+
+    <!-- PHOTOS LOAD FROM image-list.js -->
+
+    <div
+        class="gallery-grid"
+        id="galleryGrid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= SAVING SCHEME ================= -->
+
+<section id="scheme"
+         class="section scheme-section">
+
+
+    <div class="section-title">
+
+        <span>
+            SAVING SCHEME
+        </span>
+
+        <h2>
+            Swarnkarshan Sanchay Yojana
+        </h2>
+
+        <p>
+            Contact us for complete scheme information.
+        </p>
+
+    </div>
+
+
+    <a
+        class="wa-btn"
+        href="https://wa.me/919503151404"
+        target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        WhatsApp Enquiry
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-choose"
+         id="why-choose">
+
+
+    <div class="why-header">
+
+
+        <p class="section-tag">
+            WHY CHOOSE US
+        </p>
+
+
+        <h2>
+            Why Choose Nandukaka MAID Jewellers?
+        </h2>
+
+
+        <p class="why-description">
+
+            At Nandukaka MAID Jewellers, we believe jewellery is more than
+            an ornament. With trusted service, certified purity and beautiful
+            craftsmanship, we create jewellery for every special moment.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="why-grid">
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <h3>
+                Trust & Purity
+            </h3>
+
+            <p>
+                Trusted jewellery with commitment to purity,
+                quality and transparency.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-gem"></i>
+
+            </div>
+
+            <h3>
+                Certified Jewellery
+            </h3>
+
+            <p>
+                Quality and authenticity are our priority
+                with every jewellery purchase.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-crown"></i>
+
+            </div>
+
+            <h3>
+                Timeless Designs
+            </h3>
+
+            <p>
+                Elegant designs crafted for weddings,
+                celebrations and special moments.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            </div>
+
+            <h3>
+                Beautiful Craftsmanship
+            </h3>
+
+            <p>
+                Every piece is crafted with attention
+                to detail and lasting elegance.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-handshake"></i>
+
+            </div>
+
+            <h3>
+                Trusted Service
+            </h3>
+
+            <p>
+                Honest guidance and personalised
+                service for every customer.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+            <h3>
+                Every Occasion
+            </h3>
+
+            <p>
+                From daily wear to weddings,
+                jewellery for meaningful moments.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= AFFILIATIONS ================= -->
+
+<section id="affiliations"
+         class="section affiliations-section">
+
+
+    <div class="section-title">
+
+        <span>
+            AFFILIATIONS
+        </span>
+
+        <h2>
+            Our Affiliations
+        </h2>
+
+    </div>
+
+
+
+    <div class="affiliations-grid">
+
+
+        <div class="affiliation-card">
+
+            <img
+                src="images/affiliations/manufacturer-of-india-gjf-2015-1.jpg"
+                alt="Affiliation">
+
+        </div>
+
+
+
+        <div class="affiliation-card">
+
+            <img
+                src="images/affiliations/all-india-gems-and-jewellery-trade-federation-gjf.jpg"
+                alt="Affiliation">
+
+        </div>
+
+
+
+        <div class="affiliation-card">
+
+            <img
+                src="images/affiliations/india-bullion-and-jewellers-association.jpg"
+                alt="Affiliation">
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="quick-contact">
+
+
+    <div class="quick-contact-content">
+
+
+        <div class="quick-contact-text">
+
+            <span>
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                We're Here to Help
+            </h2>
+
+            <p>
+                Contact Nandukaka MAID Jewellers for jewellery enquiries,
+                collections and personalised assistance.
+            </p>
+
+        </div>
+
+
+
+        <div class="quick-contact-buttons">
+
+
+            <!-- CHANGE PHONE NUMBER -->
+
+            <a
+                href="tel:YOUR_PHONE_NUMBER"
+                class="contact-btn call-btn">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+
+                    <small>
+                        Call Us
+                    </small>
+
+                    <strong>
+                        Call Now
+                    </strong>
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="https://wa.me/919503151404"
+                target="_blank"
+                class="contact-btn whatsapp-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+
+                <span>
+
+                    <small>
+                        Chat With Us
+                    </small>
+
+                    <strong>
+                        WhatsApp
+                    </strong>
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= MAP ================= -->
+
+<section class="visit-store"
+         id="location">
+
+
+    <div class="visit-store-header">
+
+
+        <span class="location-tag">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            FIND US
+
+        </span>
+
+
+        <h2>
+            Visit Our Jewellery Store
+        </h2>
+
+
+        <p>
+            Visit Nandukaka MAID Jewellers and explore our beautiful
+            jewellery collections.
+        </p>
+
+
+    </div>
+
+
+
+    <div class="location-card">
+
+
+        <!-- STORE DETAILS -->
+
+        <div class="location-details">
+
+
+            <div class="location-icon">
+
+                <i class="fa-solid fa-store"></i>
+
+            </div>
+
+
+            <h3>
+                Nandukaka MAID Jewellers
+            </h3>
+
+
+            <p class="location-text">
+
+                Visit our jewellery store and experience trusted service,
+                beautiful craftsmanship and elegant collections.
+
+            </p>
+
+
+
+            <div class="location-info">
+
+
+                <div class="location-info-item">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            OUR LOCATION
+                        </span>
+
+                        <p>
+                            Visit us at our jewellery store
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="location-info-item">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            STORE HOURS
+                        </span>
+
+                        <p>
+                            Contact us for store timings
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- DIRECTIONS -->
+
+            <a
+                href="https://maps.app.goo.gl/PR2X21C67MSNhn7F8"
+                target="_blank"
+                class="directions-btn">
+
+                <i class="fa-solid fa-diamond-turn-right"></i>
+
+                Get Directions
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- MAP -->
+
+        <div class="premium-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Nandukaka%20MAID%20Jewellers&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Nandukaka MAID Jewellers & Son.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</main>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<!-- IMPORTANT:
+     This file contains the jewellery image list -->
+
+<script src="image-list.js"></script>
+
+
+<!-- Main website functionality -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html> 
