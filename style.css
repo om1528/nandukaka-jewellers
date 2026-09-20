@@ -507,16 +507,363 @@ body {
 }
 
 
-/* ================================
-   SCHEME SECTION
-================================ */
+/* =========================================================
+   SAVING SCHEME - SWARNKARSHAN SANCHAY YOJANA
+   ========================================================= */
 
 .scheme-section {
-    text-align: center;
-    background: #eee4d4;
+  background: #f8f0e6;
+  padding: 80px 6%;
+  text-align: center;
+}
+
+.scheme-section .section-title {
+  max-width: 850px;
+  margin: 0 auto 45px;
+}
+
+.scheme-section .section-title > span {
+  display: inline-block;
+  color: #a85c20;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.scheme-section .section-title h2 {
+  margin: 0 0 15px;
+  color: #171717;
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.scheme-section .section-title p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 
+/* -------------------------
+   THREE INFORMATION CARDS
+   ------------------------- */
+
+.scheme-cards {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.scheme-card {
+  position: relative;
+  min-height: 250px;
+  padding: 38px 30px;
+  background: #fffaf4;
+  border: 1px solid #c8752b;
+  border-radius: 0 0 28px 28px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(100, 60, 20, 0.06);
+}
+
+.scheme-card.highlight {
+  background: #fffdf9;
+  border-width: 2px;
+}
+
+.scheme-number {
+  position: absolute;
+  right: 15px;
+  bottom: -30px;
+  font-family: Georgia, serif;
+  font-size: 125px;
+  line-height: 1;
+  color: rgba(191, 119, 58, 0.09);
+  pointer-events: none;
+}
+
+.scheme-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 18px;
+  color: #171717;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.scheme-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.scheme-card strong {
+  color: #9b541b;
+}
+
+
+/* -------------------------
+   EXAMPLE BOX
+   ------------------------- */
+
+.scheme-example {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 45px 40px;
+  background: #fffaf4;
+  border: 1px solid #c8752b;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(100, 60, 20, 0.07);
+}
+
+.scheme-example > span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #a85c20;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.scheme-example h3 {
+  margin: 0 0 35px;
+  color: #171717;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+
+/* -------------------------
+   CALCULATION
+   ------------------------- */
+
+.scheme-calculation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.scheme-calculation > div:not(.plus):not(.equal) {
+  min-width: 150px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid #e0c7ad;
+  border-radius: 14px;
+}
+
+.scheme-calculation strong {
+  display: block;
+  color: #a85c20;
+  font-family: Georgia, serif;
+  font-size: 27px;
+}
+
+.scheme-calculation small {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+  font-size: 13px;
+}
+
+.scheme-calculation .plus,
+.scheme-calculation .equal {
+  color: #a85c20;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* -------------------------
+   BONUS
+   ------------------------- */
+
+.bonus-line {
+  max-width: 650px;
+  margin: 0 auto 20px;
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #f5e4d2;
+  border-radius: 12px;
+  color: #333;
+}
+
+.bonus-line span {
+  font-size: 16px;
+}
+
+.bonus-line strong {
+  color: #a85c20;
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+
+/* -------------------------
+   FINAL AMOUNT
+   ------------------------- */
+
+.maturity-box {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #1d1b18;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.maturity-box span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.maturity-box strong {
+  display: block;
+  color: #e3b66b;
+  font-family: Georgia, serif;
+  font-size: 36px;
+}
+
+
+/* -------------------------
+   NOTE
+   ------------------------- */
+
+.scheme-note {
+  max-width: 650px;
+  margin: 25px auto 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.scheme-note i {
+  margin-right: 5px;
+  color: #a85c20;
+}
+
+
+/* -------------------------
+   WHATSAPP BUTTON
+   ------------------------- */
+
+.scheme-section .wa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 35px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: #a85c20;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.scheme-section .wa-btn:hover {
+  transform: translateY(-2px);
+  background: #874817;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .scheme-section {
+    padding: 60px 5%;
+  }
+
+  .scheme-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .scheme-card {
+    min-height: auto;
+  }
+
+  .scheme-example {
+    padding: 35px 20px;
+  }
+
+  .scheme-example h3 {
+    font-size: 27px;
+  }
+
+  .scheme-calculation {
+    gap: 10px;
+  }
+
+  .scheme-calculation > div:not(.plus):not(.equal) {
+    min-width: 120px;
+  }
+
+  .scheme-calculation .plus,
+  .scheme-calculation .equal {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .scheme-section .section-title h2 {
+    font-size: 30px;
+  }
+
+  .scheme-card {
+    padding: 30px 24px;
+  }
+
+  .scheme-example h3 {
+    font-size: 24px;
+  }
+
+  .scheme-calculation {
+    flex-direction: column;
+  }
+
+  .scheme-calculation .plus,
+  .scheme-calculation .equal {
+    transform: rotate(90deg);
+  }
+
+  .scheme-calculation > div:not(.plus):not(.equal) {
+    width: 100%;
+  }
+
+  .bonus-line {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .maturity-box strong {
+    font-size: 30px;
+  }
+
+}
 /* ================================
    WHY CHOOSE US
 ================================ */

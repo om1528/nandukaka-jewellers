@@ -13,27 +13,16 @@ let selectedCategory = "";
 // ================================
 
 const categoryNames = {
-
     rings: "Rings",
-
     bracelets: "Bracelets",
-
     chains: "Chains",
-
     earrings: "Earrings",
-
     bangles: "Bangles",
-
     mangalsutra: "Mangalsutra",
-
     necklaces: "Necklaces",
-
     payal: "Payal",
-
     "single-bali": "Single Bali",
-
     "wrist-watches": "Wrist Watches"
-
 };
 
 
@@ -44,72 +33,76 @@ const categoryNames = {
 function openMetal(metal) {
 
     selectedMetal = metal;
-
     selectedGroup = "";
-
     selectedCategory = "";
-
-
-    // Hide sections
 
     document
         .getElementById("collections")
         .classList.add("hidden");
 
-
     document
         .getElementById("subcategories")
         .classList.add("hidden");
 
-
     document
         .getElementById("gallery")
         .classList.add("hidden");
-
-
-    // Show groups
 
     document
         .getElementById("groups")
         .classList.remove("hidden");
 
 
-    // Titles
+    const groupLabel =
+        document.getElementById("groupLabel");
 
-    document
-        .getElementById("groupLabel")
-        .textContent = metal.toUpperCase() + " COLLECTION";
+    if (groupLabel) {
+        groupLabel.textContent =
+            metal.toUpperCase() + " COLLECTION";
+    }
 
 
-    document
-        .getElementById("groupTitle")
-        .textContent =
-        "Choose a " +
-        metal.charAt(0).toUpperCase() +
-        metal.slice(1) +
-        " Collection";
+    const groupTitle =
+        document.getElementById("groupTitle");
+
+    if (groupTitle) {
+        groupTitle.textContent =
+            "Choose a " +
+            metal.charAt(0).toUpperCase() +
+            metal.slice(1) +
+            " Collection";
+    }
 
 
     const groupGrid =
         document.getElementById("groupGrid");
 
+    if (!groupGrid) {
+        console.error("groupGrid not found");
+        return;
+    }
+
 
     groupGrid.innerHTML = "";
 
-
-    // Get groups from image-list.js
 
     const groups =
         jewelleryImages[metal];
 
 
-    // Create cards
+    if (!groups) {
+        console.error(
+            "Collection not found:",
+            metal
+        );
+        return;
+    }
+
 
     Object.keys(groups).forEach(group => {
 
         const card =
             document.createElement("div");
-
 
         card.className =
             "category-card";
@@ -118,9 +111,7 @@ function openMetal(metal) {
         card.innerHTML = `
 
             <div class="category-icon">
-
                 ${group.toUpperCase().charAt(0)}
-
             </div>
 
             <small>
@@ -138,12 +129,12 @@ function openMetal(metal) {
         `;
 
 
-        card.onclick =
+        card.addEventListener(
+            "click",
             function () {
-
                 openGroup(group);
-
-            };
+            }
+        );
 
 
         groupGrid.appendChild(card);
@@ -152,7 +143,6 @@ function openMetal(metal) {
 
 
     scrollToSection("groups");
-
 }
 
 
@@ -164,7 +154,6 @@ function openMetal(metal) {
 function openGroup(group) {
 
     selectedGroup = group;
-
     selectedCategory = "";
 
 
@@ -172,21 +161,30 @@ function openGroup(group) {
         .getElementById("groups")
         .classList.add("hidden");
 
-
     document
         .getElementById("gallery")
         .classList.add("hidden");
 
 
     const groupData =
-        jewelleryImages
-        [selectedMetal]
-        [selectedGroup];
+        jewelleryImages[selectedMetal]?.[selectedGroup];
+
+
+    if (!groupData) {
+
+        console.error(
+            "Group not found:",
+            selectedMetal,
+            selectedGroup
+        );
+
+        return;
+    }
 
 
     // ================================
-    // KIDS / DEVOTIONAL
     // DIRECT PHOTOS
+    // KIDS / DEVOTIONAL
     // ================================
 
     if (Array.isArray(groupData)) {
@@ -199,15 +197,12 @@ function openGroup(group) {
         );
 
         return;
-
     }
 
 
     // ================================
     // GENTS / LADIES
-    // SUBCATEGORIES
     // ================================
-
 
     document
         .getElementById("subcategories")
@@ -233,12 +228,17 @@ function openGroup(group) {
         document.getElementById("subGrid");
 
 
+    if (!subGrid) {
+        console.error("subGrid not found");
+        return;
+    }
+
+
     subGrid.innerHTML = "";
 
 
     Object.keys(groupData)
         .forEach(category => {
-
 
             const card =
                 document.createElement("div");
@@ -256,37 +256,32 @@ function openGroup(group) {
 
                 </div>
 
-
                 <small>
-
                     ${selectedMetal.toUpperCase()}
-
                 </small>
 
-
                 <h3>
-
-                    ${categoryNames[category]
-                    || capitalize(category)}
-
+                    ${
+                        categoryNames[category]
+                        || capitalize(category)
+                    }
                 </h3>
 
-
                 <p>
-
                     View Designs →
-
                 </p>
 
             `;
 
 
-            card.onclick =
+            card.addEventListener(
+                "click",
                 function () {
 
                     openCategory(category);
 
-                };
+                }
+            );
 
 
             subGrid.appendChild(card);
@@ -311,22 +306,40 @@ function openCategory(category) {
 
     const images =
         jewelleryImages
-        [selectedMetal]
-        [selectedGroup]
-        [selectedCategory];
+            ?. [selectedMetal]
+            ?. [selectedGroup]
+            ?. [selectedCategory];
 
 
-    openGallery(
+    if (!images) {
 
-        images,
+        console.error(
+            "Category not found:",
+            selectedMetal,
+            selectedGroup,
+            selectedCategory
+        );
 
+        return;
+    }
+
+
+    const categoryName =
+        categoryNames[category]
+        || capitalize(category);
+
+
+    const title =
         capitalize(selectedMetal) +
         " " +
         capitalize(selectedGroup) +
         " " +
-        (categoryNames[category]
-        || capitalize(category))
+        categoryName;
 
+
+    openGallery(
+        images,
+        title
     );
 
 }
@@ -339,8 +352,6 @@ function openCategory(category) {
 
 function openGallery(images, title) {
 
-    // Hide all previous sections
-
     document
         .getElementById("groups")
         .classList.add("hidden");
@@ -351,14 +362,10 @@ function openGallery(images, title) {
         .classList.add("hidden");
 
 
-    // Show gallery
-
     document
         .getElementById("gallery")
         .classList.remove("hidden");
 
-
-    // Gallery title
 
     document
         .getElementById("galleryLabel")
@@ -377,6 +384,12 @@ function openGallery(images, title) {
         document.getElementById("galleryGrid");
 
 
+    if (!galleryGrid) {
+        console.error("galleryGrid not found");
+        return;
+    }
+
+
     galleryGrid.innerHTML = "";
 
 
@@ -384,7 +397,10 @@ function openGallery(images, title) {
     // NO PHOTOS
     // ================================
 
-    if (!images || images.length === 0) {
+    if (
+        !Array.isArray(images) ||
+        images.length === 0
+    ) {
 
         galleryGrid.innerHTML = `
 
@@ -406,8 +422,8 @@ function openGallery(images, title) {
         scrollToSection("gallery");
 
         return;
-
     }
+
 
 
     // ================================
@@ -415,7 +431,6 @@ function openGallery(images, title) {
     // ================================
 
     images.forEach((image, index) => {
-
 
         const product =
             document.createElement("div");
@@ -425,36 +440,68 @@ function openGallery(images, title) {
             "product-card";
 
 
+        // ================================
+        // CATEGORY-WISE SEQUENCE
+        // 01, 02, 03...
+        // ================================
+
+        const productNumber =
+            String(index + 1)
+                .padStart(2, "0");
+
+
+        const productName =
+            title +
+            " " +
+            productNumber;
+
+
         product.innerHTML = `
 
             <img
                 src="${image}"
-                alt="${title} Jewellery Design ${index + 1}"
+                alt="${productName}"
                 loading="lazy"
             >
-
 
             <div class="product-info">
 
                 <h3>
-
-                    ${title}
-
+                    ${productName}
                 </h3>
 
-
                 <button
-    onclick="sendWhatsApp('${title}', ${index + 1})">
+                    type="button"
+                    class="whatsapp-product-btn">
 
-    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
 
-    Enquire on WhatsApp
+                    Enquire on WhatsApp
 
-</button>
+                </button>
 
             </div>
 
         `;
+
+
+        const whatsappButton =
+            product.querySelector(
+                ".whatsapp-product-btn"
+            );
+
+
+        whatsappButton.addEventListener(
+            "click",
+            function () {
+
+                sendWhatsApp(
+                    productName,
+                    productNumber
+                );
+
+            }
+        );
 
 
         galleryGrid.appendChild(product);
@@ -475,9 +522,7 @@ function openGallery(images, title) {
 function goCollections() {
 
     selectedMetal = "";
-
     selectedGroup = "";
-
     selectedCategory = "";
 
 
@@ -514,7 +559,6 @@ function goCollections() {
 function goGroups() {
 
     selectedGroup = "";
-
     selectedCategory = "";
 
 
@@ -552,8 +596,13 @@ function goSubcategories() {
 
     const groupData =
         jewelleryImages
-        [selectedMetal]
-        [selectedGroup];
+            ?. [selectedMetal]
+            ?. [selectedGroup];
+
+
+    if (!groupData) {
+        return;
+    }
 
 
     // Kids / Devotional
@@ -568,7 +617,6 @@ function goSubcategories() {
         scrollToSection("groups");
 
         return;
-
     }
 
 
@@ -589,12 +637,17 @@ function goSubcategories() {
 // WHATSAPP ENQUIRY
 // ================================
 
-function sendWhatsApp(product, serialNumber) {
+function sendWhatsApp(
+    product,
+    serialNumber
+) {
 
-    const phoneNumber = "919503151404";
+    const phoneNumber =
+        "919503151404";
+
 
     const message =
-        `Hello Nandukaka MAID Jewellers,
+`Hello Nandukaka MAID Jewellers,
 
 I am interested in:
 
@@ -604,14 +657,21 @@ Design No: ${serialNumber}
 
 Please share more details.`;
 
+
     const url =
         "https://wa.me/" +
         phoneNumber +
         "?text=" +
         encodeURIComponent(message);
 
-    window.open(url, "_blank");
+
+    window.open(
+        url,
+        "_blank"
+    );
+
 }
+
 
 
 // ================================
@@ -622,8 +682,11 @@ function capitalize(text) {
 
     return text
         .replace(/-/g, " ")
-        .replace(/\b\w/g,
-            char => char.toUpperCase()
+        .replace(
+            /\b\w/g,
+            function (char) {
+                return char.toUpperCase();
+            }
         );
 
 }
@@ -636,51 +699,211 @@ function capitalize(text) {
 
 function scrollToSection(id) {
 
-    setTimeout(() => {
+    setTimeout(function () {
 
-        document
-            .getElementById(id)
-            .scrollIntoView({
+        const section =
+            document.getElementById(id);
 
-                behavior: "smooth",
 
-                block: "start"
+        if (!section) {
+            return;
+        }
 
-            });
+
+        section.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
 
     }, 100);
 
 }
+
+
+
+// ======================================================
+// SAVING SCHEME CALCULATOR
+// ======================================================
+
 function calculateScheme() {
 
+    const monthlyInput =
+        document.getElementById(
+            "monthlyAmount"
+        );
+
+
+    const durationInput =
+        document.getElementById(
+            "schemeDuration"
+        );
+
+
+    const bonusInput =
+        document.getElementById(
+            "bonusAmount"
+        );
+
+
+    if (
+        !monthlyInput ||
+        !durationInput ||
+        !bonusInput
+    ) {
+        return;
+    }
+
+
     const monthlyAmount =
-        Number(document.getElementById("monthlyAmount").value);
+        Number(monthlyInput.value);
+
 
     const duration =
-        Number(document.getElementById("schemeDuration").value);
+        Number(durationInput.value);
+
 
     const bonus =
-        Number(document.getElementById("bonusAmount").value);
+        Number(bonusInput.value);
 
 
-    // Customer ne total kitna bhara
-    const totalPaid = monthlyAmount * duration;
+    if (monthlyAmount <= 0) {
+
+        alert(
+            "Please enter a valid monthly amount."
+        );
+
+        return;
+    }
 
 
-    // Bonus add karke final jewellery value
-    const finalAmount = totalPaid + bonus;
+    const totalPaid =
+        monthlyAmount * duration;
 
 
-    // Summary update
-    document.getElementById("summaryMonthly").textContent =
-        "₹" + monthlyAmount.toLocaleString("en-IN");
+    const finalAmount =
+        totalPaid + bonus;
 
-    document.getElementById("totalPaid").textContent =
-        "₹" + totalPaid.toLocaleString("en-IN");
 
-    document.getElementById("summaryBonus").textContent =
-        "₹" + bonus.toLocaleString("en-IN");
+    const formatMoney =
+        function (amount) {
 
-    document.getElementById("finalAmount").textContent =
-        "₹" + finalAmount.toLocaleString("en-IN");
+            return "₹" +
+                amount.toLocaleString("en-IN");
+
+        };
+
+
+    const summaryMonthly =
+        document.getElementById(
+            "summaryMonthly"
+        );
+
+
+    const summaryDuration =
+        document.getElementById(
+            "summaryDuration"
+        );
+
+
+    const totalPaidElement =
+        document.getElementById(
+            "totalPaid"
+        );
+
+
+    const summaryBonus =
+        document.getElementById(
+            "summaryBonus"
+        );
+
+
+    const finalAmountElement =
+        document.getElementById(
+            "finalAmount"
+        );
+
+
+    if (summaryMonthly) {
+
+        summaryMonthly.textContent =
+            formatMoney(monthlyAmount);
+
+    }
+
+
+    if (summaryDuration) {
+
+        summaryDuration.textContent =
+            duration + " Months";
+
+    }
+
+
+    if (totalPaidElement) {
+
+        totalPaidElement.textContent =
+            formatMoney(totalPaid);
+
+    }
+
+
+    if (summaryBonus) {
+
+        summaryBonus.textContent =
+            formatMoney(bonus);
+
+    }
+
+
+    if (finalAmountElement) {
+
+        finalAmountElement.textContent =
+            formatMoney(finalAmount);
+
+    }
+
 }
+
+
+
+// ======================================================
+// SAVING SCHEME - PAGE LOAD
+// ======================================================
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const monthly =
+            document.getElementById(
+                "monthlyAmount"
+            );
+
+
+        const duration =
+            document.getElementById(
+                "schemeDuration"
+            );
+
+
+        const bonus =
+            document.getElementById(
+                "bonusAmount"
+            );
+
+
+        if (
+            monthly &&
+            duration &&
+            bonus
+        ) {
+
+            calculateScheme();
+
+        }
+
+    }
+);
