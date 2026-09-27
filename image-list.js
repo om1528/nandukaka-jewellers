@@ -599,7 +599,13 @@ mangalsutra: [
     "images/gold/ladies/mangalsutra/mangalsutra-85.jpg"
 ],
 
-      necklaces: [],
+    "necklaces": [
+  "images/gold/ladies/necklaces/necklace-01.jpg",
+  "images/gold/ladies/necklaces/necklace-02.jpg",
+  "images/gold/ladies/necklaces/necklace-03.jpg",
+  "images/gold/ladies/necklaces/necklace-04.jpg",
+  "images/gold/ladies/necklaces/necklace-05.jpg"
+],
 
       "wrist-watches": [
     "images/gold/ladies/wrist-watches/watch-1.jpg",
@@ -634,7 +640,16 @@ mangalsutra: [
     "images/gold/ladies/wrist-watches/watch-33.jpg",
     "images/gold/ladies/wrist-watches/watch-34.jpg"
 
-]
+],
+"i-ring-tops":  [
+  "images/gold/ladies/i-ring-tops/i-ring-top-01.jpg",
+  "images/gold/ladies/i-ring-tops/i-ring-top-02.jpg",
+  "images/gold/ladies/i-ring-tops/i-ring-top-03.jpg",
+  "images/gold/ladies/i-ring-tops/i-ring-top-04.jpg"
+],
+"pendants": [],
+"nose-pins": [],
+"fancy-jewellery": []
     },
 
 
@@ -672,16 +687,56 @@ mangalsutra: [
   "images/gold/kids/kid-27.jpg"
 ],
 
+"i-tops": [],
+
+"pendants": [],
+
+"nose-pins": [],
+
+"fancy-jewellery": [],
+  
+
+
 
     // ===============================
     // DEVOTIONAL
     // ===============================
 
-    devotional: []
+    devotional: [],
+// ================================
+// DEVOTIONAL
+// ================================
 
-  },
+devotional: [],
 
 
+// ================================
+// COUPLE RINGS
+// ================================
+
+"couple-rings": [
+    "images/gold/couple-rings/couple-ring-01.jpg",
+    "images/gold/couple-rings/couple-ring-02.jpg",
+    "images/gold/couple-rings/couple-ring-03.jpg",
+    "images/gold/couple-rings/couple-ring-04.jpg",
+    "images/gold/couple-rings/couple-ring-05.jpg",
+    "images/gold/couple-rings/couple-ring-06.jpg",
+    "images/gold/couple-rings/couple-ring-07.jpg",
+    "images/gold/couple-rings/couple-ring-08.jpg",
+    "images/gold/couple-rings/couple-ring-09.jpg",
+    "images/gold/couple-rings/couple-ring-10.jpg",
+    "images/gold/couple-rings/couple-ring-11.jpg",
+    "images/gold/couple-rings/couple-ring-12.jpg"
+],
+
+
+// ================================
+// PREMIUM COLLECTION
+// ================================
+
+"premium-collection": []
+
+},
   // ===============================
   // SILVER
   // ===============================
@@ -768,3 +823,5 @@ mangalsutra: [
   }
 
 };
+
+ 
