@@ -759,12 +759,10 @@ body {
   color: #a85c20;
 }
 
+/* WHATSAPP + INSTAGRAM SAME STYLE */
 
-/* -------------------------
-   WHATSAPP BUTTON
-   ------------------------- */
-
-.scheme-section .wa-btn {
+.scheme-section .wa-btn,
+.scheme-section .instagram-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -772,18 +770,43 @@ body {
   margin-top: 35px;
   padding: 14px 28px;
   border-radius: 30px;
-  background: #a85c20;
-  color: #fff;
+  background: transparent;
+  color: #fff !important;
   text-decoration: none;
   font-weight: 600;
+  border: 1px solid #a85c20;
   transition: 0.3s ease;
 }
 
-.scheme-section .wa-btn:hover {
-  transform: translateY(-2px);
-  background: #874817;
+/* ICON */
+.scheme-section .wa-btn i,
+.scheme-section .instagram-btn i {
+  color: #fff !important;
 }
 
+/* TEXT */
+.scheme-section .wa-btn span,
+.scheme-section .instagram-btn span,
+.scheme-section .wa-btn small,
+.scheme-section .instagram-btn small,
+.scheme-section .wa-btn strong,
+.scheme-section .instagram-btn strong {
+  color: #fff !important;
+}
+
+/* HOVER */
+
+.scheme-section .wa-btn:hover {
+  transform: translateY(-2px);
+  background: #25D366;
+  border-color: #25D366;
+}
+
+.scheme-section .instagram-btn:hover {
+  transform: translateY(-2px);
+  background: #E1306C;
+  border-color: #E1306C;
+}
 
 /* =========================================================
    MOBILE

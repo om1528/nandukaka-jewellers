@@ -647,10 +647,46 @@ mangalsutra: [
   "images/gold/ladies/i-ring-tops/i-ring-top-03.jpg",
   "images/gold/ladies/i-ring-tops/i-ring-top-04.jpg"
 ],
-"pendants": [],
-"nose-pins": [],
-"fancy-jewellery": []
-    },
+"pendants": [ 
+  "images/gold/ladies/pendants/pendant-01.jpg",
+  "images/gold/ladies/pendants/pendant-02.jpg",
+  "images/gold/ladies/pendants/pendant-03.jpg",
+  "images/gold/ladies/pendants/pendant-04.jpg",
+  "images/gold/ladies/pendants/pendant-05.jpg",
+  "images/gold/ladies/pendants/pendant-06.jpg",
+  "images/gold/ladies/pendants/pendant-07.jpg",
+  "images/gold/ladies/pendants/pendant-08.jpg"
+],
+"rani-haar": [
+  "images/gold/ladies/rani-haar/rani-haar-01.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-02.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-03.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-04.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-05.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-06.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-07.jpg",
+  "images/gold/ladies/rani-haar/rani-haar-08.jpg"
+],
+"feather cast haar": ["images/gold/ladies/feather-cast-haar/feather-cast-haar-01.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-02.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-03.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-04.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-05.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-06.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-07.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-08.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-09.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-10.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-11.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-12.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-13.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-14.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-15.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-16.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-17.jpg",
+"images/gold/ladies/feather-cast-haar/feather-cast-haar-18.jpg"]
+}
+    ,
 
 
     // ===============================
@@ -751,7 +787,16 @@ devotional: [],
 
       rings: [],
 
-      bracelets: [],
+      bracelets: [
+    "images/silver/gents/bracelets/bracelet-1.jpg",
+    "images/silver/gents/bracelets/bracelet-2.jpg",
+    "images/silver/gents/bracelets/bracelet-3.jpg",
+    "images/silver/gents/bracelets/bracelet-4.jpg",
+    "images/silver/gents/bracelets/bracelet-5.jpg",
+    "images/silver/gents/bracelets/bracelet-6.jpg",
+    "images/silver/gents/bracelets/bracelet-7.jpg",
+    "images/silver/gents/bracelets/bracelet-8.jpg"
+],
 
       chains: [],
 
@@ -768,16 +813,66 @@ devotional: [],
 
     ladies: {
 
-      rings: [],
+      rings: [
+  "images/silver/ladies/rings/ring-01.jpg",
+  "images/silver/ladies/rings/ring-02.jpg",
+  "images/silver/ladies/rings/ring-03.jpg",
+  "images/silver/ladies/rings/ring-04.jpg",
+  "images/silver/ladies/rings/ring-05.jpg",
+  "images/silver/ladies/rings/ring-06.jpg",
+  "images/silver/ladies/rings/ring-07.jpg",
+  "images/silver/ladies/rings/ring-08.jpg",
+  "images/silver/ladies/rings/ring-09.jpg",
+  "images/silver/ladies/rings/ring-10.jpg",
+  "images/silver/ladies/rings/ring-11.jpg",
+  "images/silver/ladies/rings/ring-12.jpg",
+  "images/silver/ladies/rings/ring-13.jpg",
+  "images/silver/ladies/rings/ring-14.jpg",
+  "images/silver/ladies/rings/ring-15.jpg",
+  "images/silver/ladies/rings/ring-16.jpg",
+  "images/silver/ladies/rings/ring-17.jpg",
+  "images/silver/ladies/rings/ring-18.jpg"
+],
 
-      bracelets: [],
+     ganthan:   [
+    "images/silver/ladies/ganthan/ganthan-1.jpg",
+    "images/silver/ladies/ganthan/ganthan-2.jpg",
+    "images/silver/ladies/ganthan/ganthan-3.jpg",
+    "images/silver/ladies/ganthan/ganthan-4.jpg",
+    "images/silver/ladies/ganthan/ganthan-5.jpg",
+    "images/silver/ladies/ganthan/ganthan-6.jpg",
+    "images/silver/ladies/ganthan/ganthan-7.jpg",
+    "images/silver/ladies/ganthan/ganthan-8.jpg",
+    "images/silver/ladies/ganthan/ganthan-9.jpg",
+    "images/silver/ladies/ganthan/ganthan-10.jpg",
+    "images/silver/ladies/ganthan/ganthan-11.jpg",
+    "images/silver/ladies/ganthan/ganthan-12.jpg",
+    "images/silver/ladies/ganthan/ganthan-13.jpg",
+    "images/silver/ladies/ganthan/ganthan-14.jpg",
+    "images/silver/ladies/ganthan/ganthan-15.jpg",
+    "images/silver/ladies/ganthan/ganthan-16.jpg"
+], 
 
       chains: [],
 
       payal: [],
 
-      "wrist-watches": []
-
+       jodwe:   [
+  "images/silver/ladies/jodwe/jodwe-01.jpg",
+  "images/silver/ladies/jodwe/jodwe-02.jpg",
+  "images/silver/ladies/jodwe/jodwe-03.jpg",
+  "images/silver/ladies/jodwe/jodwe-04.jpg",
+  "images/silver/ladies/jodwe/jodwe-05.jpg",
+  "images/silver/ladies/jodwe/jodwe-06.jpg",
+  "images/silver/ladies/jodwe/jodwe-07.jpg",
+  "images/silver/ladies/jodwe/jodwe-08.jpg",
+  "images/silver/ladies/jodwe/jodwe-09.jpg",
+  "images/silver/ladies/jodwe/jodwe-10.jpg",
+  "images/silver/ladies/jodwe/jodwe-11.jpg",
+  "images/silver/ladies/jodwe/jodwe-12.jpg",
+  "images/silver/ladies/jodwe/jodwe-13.jpg",
+  "images/silver/ladies/jodwe/jodwe-14.jpg"
+],
     },
 
 
@@ -785,7 +880,33 @@ devotional: [],
     // KIDS
     // ===============================
 
-    kids: [],
+    kids: [ 
+    "images/silver/kids/kids-silver-01.jpg",
+    "images/silver/kids/kids-silver-02.jpg",
+    "images/silver/kids/kids-silver-03.jpg",
+    "images/silver/kids/kids-silver-04.jpg",
+    "images/silver/kids/kids-silver-05.jpg",
+    "images/silver/kids/kids-silver-06.jpg",
+    "images/silver/kids/kids-silver-07.jpg",
+    "images/silver/kids/kids-silver-08.jpg",
+    "images/silver/kids/kids-silver-09.jpg",
+    "images/silver/kids/kids-silver-10.jpg",
+    "images/silver/kids/kids-silver-11.jpg",
+    "images/silver/kids/kids-silver-12.jpg",
+    "images/silver/kids/kids-silver-13.jpg",
+    "images/silver/kids/kids-silver-14.jpg",
+     
+    "images/silver/kids/kids-silver-15.jpg",
+"images/silver/kids/kids-silver-16.jpg",
+"images/silver/kids/kids-silver-17.jpg",
+"images/silver/kids/kids-silver-18.jpg",
+"images/silver/kids/kids-silver-19.jpg",
+"images/silver/kids/kids-silver-20.jpg",
+"images/silver/kids/kids-silver-21.jpg",
+"images/silver/kids/kids-silver-22.jpg",
+"images/silver/kids/kids-silver-23.jpg"
+ 
+],
 
 
     // ===============================
