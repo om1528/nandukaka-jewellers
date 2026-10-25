@@ -1018,6 +1018,10 @@ function openGroup(group){
   if(group==="kids"||group==="devotional"){
     openGallery();
     return;
+
+
+
+    
   }
 
   hideViews();

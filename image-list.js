@@ -207,6 +207,7 @@ const jewelleryImages = {
  
 ]
 
+
     },
 
 
@@ -250,6 +251,12 @@ const jewelleryImages = {
   "images/gold/ladies/bracelets/bracelet-01.jpg",
   "images/gold/ladies/bracelets/bracelet-02.jpg",
   "images/gold/ladies/bracelets/bracelet-03.jpg"
+   ,
+  "images/gold/ladies/bracelets/bracelet-04.jpg",
+  "images/gold/ladies/bracelets/bracelet-05.jpg",
+  "images/gold/ladies/bracelets/bracelet-06.jpg",
+  "images/gold/ladies/bracelets/bracelet-07.jpg"
+
 ],
 
       chains: [
@@ -599,12 +606,38 @@ mangalsutra: [
     "images/gold/ladies/mangalsutra/mangalsutra-85.jpg"
 ],
 
-    "necklaces": [
+   "necklaces": [
   "images/gold/ladies/necklaces/necklace-01.jpg",
   "images/gold/ladies/necklaces/necklace-02.jpg",
   "images/gold/ladies/necklaces/necklace-03.jpg",
   "images/gold/ladies/necklaces/necklace-04.jpg",
-  "images/gold/ladies/necklaces/necklace-05.jpg"
+  "images/gold/ladies/necklaces/necklace-05.jpg",
+  "images/gold/ladies/necklaces/necklace-06.jpg",
+  "images/gold/ladies/necklaces/necklace-07.jpg",
+  "images/gold/ladies/necklaces/necklace-08.jpg",
+  "images/gold/ladies/necklaces/necklace-09.jpg",
+  "images/gold/ladies/necklaces/necklace-10.jpg",
+  "images/gold/ladies/necklaces/necklace-11.jpg",
+  "images/gold/ladies/necklaces/necklace-12.jpg",
+  "images/gold/ladies/necklaces/necklace-13.jpg",
+  "images/gold/ladies/necklaces/necklace-14.jpg",
+  "images/gold/ladies/necklaces/necklace-15.jpg",
+  "images/gold/ladies/necklaces/necklace-16.jpg",
+  "images/gold/ladies/necklaces/necklace-17.jpg",
+  "images/gold/ladies/necklaces/necklace-18.jpg",
+  "images/gold/ladies/necklaces/necklace-19.jpg",
+  "images/gold/ladies/necklaces/necklace-20.jpg",
+  "images/gold/ladies/necklaces/necklace-21.jpg",
+  "images/gold/ladies/necklaces/necklace-22.jpg",
+  "images/gold/ladies/necklaces/necklace-23.jpg",
+  "images/gold/ladies/necklaces/necklace-24.jpg",
+  "images/gold/ladies/necklaces/necklace-25.jpg",
+  "images/gold/ladies/necklaces/necklace-26.jpg",
+  "images/gold/ladies/necklaces/necklace-27.jpg",
+  "images/gold/ladies/necklaces/necklace-28.jpg",
+  "images/gold/ladies/necklaces/necklace-29.jpg",
+  "images/gold/ladies/necklaces/necklace-30.jpg",
+  "images/gold/ladies/necklaces/necklace-31.jpg"
 ],
 
       "wrist-watches": [
@@ -655,38 +688,168 @@ mangalsutra: [
   "images/gold/ladies/pendants/pendant-05.jpg",
   "images/gold/ladies/pendants/pendant-06.jpg",
   "images/gold/ladies/pendants/pendant-07.jpg",
-  "images/gold/ladies/pendants/pendant-08.jpg"
+   
 ],
 "rani-haar": [
-  "images/gold/ladies/rani-haar/rani-haar-01.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-02.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-03.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-04.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-05.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-06.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-07.jpg",
-  "images/gold/ladies/rani-haar/rani-haar-08.jpg"
+   
+
+"images/gold/ladies/rani-haar/rani-haar-10.jpg",
+"images/gold/ladies/rani-haar/rani-haar-11.jpg",
+"images/gold/ladies/rani-haar/rani-haar-12.jpg",
+"images/gold/ladies/rani-haar/rani-haar-13.jpg",
+"images/gold/ladies/rani-haar/rani-haar-14.jpg",
+"images/gold/ladies/rani-haar/rani-haar-15.jpg",
+"images/gold/ladies/rani-haar/rani-haar-16.jpg",
+"images/gold/ladies/rani-haar/rani-haar-17.jpg",
+"images/gold/ladies/rani-haar/rani-haar-18.jpg",
 ],
-"feather cast haar": ["images/gold/ladies/feather-cast-haar/feather-cast-haar-01.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-02.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-03.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-04.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-05.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-06.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-07.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-08.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-09.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-10.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-11.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-12.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-13.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-14.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-15.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-16.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-17.jpg",
-"images/gold/ladies/feather-cast-haar/feather-cast-haar-18.jpg"]
-}
-    ,
+// "feather cast haar": ["images/gold/ladies/feather-cast-haar/feather-cast-haar-01.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-02.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-03.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-04.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-05.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-06.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-07.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-08.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-09.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-10.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-11.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-12.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-13.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-14.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-15.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-16.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-17.jpg",
+// "images/gold/ladies/feather-cast-haar/feather-cast-haar-18.jpg"],
+
+"regular-casting-ring": [
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-01.jpg",
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-02.jpg",
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-03.jpg",
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-04.jpg",
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-05.jpg",
+  "images/gold/ladies/regular-casting-ring/regular-casting-ring-06.jpg"
+],
+  
+"short-mangalsutra": [
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-01.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-02.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-03.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-04.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-05.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-06.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-07.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-08.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-09.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-10.jpg",
+   
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-11.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-12.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-13.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-14.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-15.jpg",
+  "images/gold/ladies/short-mangalsutra/short-mangalsutra-16.jpg"
+  
+],
+"long-2-line-ganthan": [
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-01.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-02.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-03.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-04.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-05.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-06.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-07.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-08.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-09.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-10.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-11.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-12.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-13.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-14.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-15.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-16.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-17.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-18.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-19.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-20.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-21.jpg",
+  "images/gold/ladies/long-2-line-ganthan/long-2-line-ganthan-22.jpg"
+],
+ "long-ganthan": [
+  "images/gold/ladies/long-ganthan/long-ganthan-01.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-02.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-03.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-04.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-05.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-06.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-07.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-08.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-09.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-10.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-11.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-12.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-13.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-14.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-15.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-16.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-17.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-18.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-19.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-20.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-21.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-22.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-23.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-24.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-25.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-26.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-27.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-28.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-29.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-30.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-31.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-32.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-33.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-34.jpg",
+  "images/gold/ladies/long-ganthan/long-ganthan-35.jpg"
+
+
+],
+"fancy-tops": [
+  "images/gold/ladies/fancy-tops/fancy-tops-01.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-02.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-03.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-04.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-05.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-06.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-07.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-08.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-09.jpg",
+  "images/gold/ladies/fancy-tops/fancy-tops-10.jpg"
+],
+
+ 
+
+// // LONG NECKLACE
+// "long-necklace": [
+//   "images/gold/ladies/long-necklace/long-necklace-01.jpg",
+//   "images/gold/ladies/long-necklace/long-necklace-02.jpg",
+//   "images/gold/ladies/long-necklace/long-necklace-03.jpg"
+// ],
+
+// // MANGALSUTRA
+// "mangalsutra": [
+//   "images/gold/ladies/mangalsutra/mangalsutra-01.jpg",
+//   "images/gold/ladies/mangalsutra/mangalsutra-02.jpg",
+//   "images/gold/ladies/mangalsutra/mangalsutra-03.jpg"
+// ],
+
+// // MINI GATHAN HAAR
+// "mini-gathan-haar": [
+//   "images/gold/ladies/mini-gathan-haar/mini-gathan-haar-01.jpg",
+//   "images/gold/ladies/mini-gathan-haar/mini-gathan-haar-02.jpg",
+//   "images/gold/ladies/mini-gathan-haar/mini-gathan-haar-03.jpg"
+// ],
+    },
 
 
     // ===============================
@@ -802,7 +965,21 @@ devotional: [],
 
       "single-bali": [],
 
-      "wrist-watches": []
+      "wrist-watches":   [
+    "images/silver/gents/wrist-watches/watch-01.jpg",
+    "images/silver/gents/wrist-watches/watch-02.jpg",
+    "images/silver/gents/wrist-watches/watch-03.jpg",
+    "images/silver/gents/wrist-watches/watch-04.jpg",
+    "images/silver/gents/wrist-watches/watch-05.jpg",
+    "images/silver/gents/wrist-watches/watch-06.jpg",
+    "images/silver/gents/wrist-watches/watch-07.jpg",
+    "images/silver/gents/wrist-watches/watch-08.jpg",
+    "images/silver/gents/wrist-watches/watch-09.jpg",
+    "images/silver/gents/wrist-watches/watch-10.jpg",
+    "images/silver/gents/wrist-watches/watch-11.jpg",
+    "images/silver/gents/wrist-watches/watch-12.jpg",
+    "images/silver/gents/wrist-watches/watch-13.jpg"
+  ],
 
     },
 
@@ -855,7 +1032,42 @@ devotional: [],
 
       chains: [],
 
-      payal: [],
+      payal: [
+      
+    "images/silver/ladies/payal/payal-01.jpg",
+    "images/silver/ladies/payal/payal-02.jpg",
+    "images/silver/ladies/payal/payal-03.jpg",
+    "images/silver/ladies/payal/payal-04.jpg",
+    "images/silver/ladies/payal/payal-05.jpg",
+    "images/silver/ladies/payal/payal-06.jpg",
+    "images/silver/ladies/payal/payal-07.jpg",
+    "images/silver/ladies/payal/payal-08.jpg",
+    "images/silver/ladies/payal/payal-09.jpg",
+    "images/silver/ladies/payal/payal-10.jpg",
+    "images/silver/ladies/payal/payal-11.jpg",
+    "images/silver/ladies/payal/payal-12.jpg",
+    "images/silver/ladies/payal/payal-13.jpg",
+    "images/silver/ladies/payal/payal-14.jpg",
+    "images/silver/ladies/payal/payal-15.jpg",
+    "images/silver/ladies/payal/payal-16.jpg",
+    "images/silver/ladies/payal/payal-17.jpg",
+    "images/silver/ladies/payal/payal-18.jpg",
+    "images/silver/ladies/payal/payal-19.jpg",
+    "images/silver/ladies/payal/payal-20.jpg",
+    "images/silver/ladies/payal/payal-21.jpg",
+    "images/silver/ladies/payal/payal-22.jpg",
+    "images/silver/ladies/payal/payal-23.jpg",
+    "images/silver/ladies/payal/payal-24.jpg",
+    "images/silver/ladies/payal/payal-25.jpg",
+    "images/silver/ladies/payal/payal-26.jpg",
+    "images/silver/ladies/payal/payal-27.jpg",
+    "images/silver/ladies/payal/payal-28.jpg",
+    "images/silver/ladies/payal/payal-29.jpg",
+    "images/silver/ladies/payal/payal-30.jpg",
+    "images/silver/ladies/payal/payal-31.jpg",
+    "images/silver/ladies/payal/payal-32.jpg"
+
+      ],
 
        jodwe:   [
   "images/silver/ladies/jodwe/jodwe-01.jpg",
@@ -873,6 +1085,22 @@ devotional: [],
   "images/silver/ladies/jodwe/jodwe-13.jpg",
   "images/silver/ladies/jodwe/jodwe-14.jpg"
 ],
+
+ 
+"latkan-tops": [
+    "images/silver/ladies/latkan-tops/latkan-tops-01.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-02.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-03.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-04.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-05.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-06.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-07.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-08.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-09.jpg",
+    "images/silver/ladies/latkan-tops/latkan-tops-10.jpg"
+],
+
+
     },
 
 
