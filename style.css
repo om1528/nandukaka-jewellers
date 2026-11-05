@@ -1857,3 +1857,51 @@ footer {
   font-weight: 700;
   margin: 10px 0 25px;
 }
+.developer-credit {
+    width: 100%;
+    text-align: center;
+    padding: 12px 5px 18px;
+    background: transparent;
+    color: #d4af37;
+    font-size: 15px;
+}
+
+.developer-credit strong {
+    color: #ffd700;
+}
+
+.developer-credit a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.developer-credit a:hover {
+    color: #ffd700;
+}.developer-credit {
+    width: 100%;
+    text-align: center;
+    padding: 12px 5px 18px;
+    background: transparent;
+    color: #d4af37;
+    font-size: 15px;
+}
+
+.developer-credit strong {
+    color: #ffd700;
+}
+
+.developer-credit a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.developer-credit a:hover {
+    color: #ffd700;
+}.footer-bottom p {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 1;
+    margin: 0 0 12px;
+    text-shadow: 0 1px 3px #000;
+}
