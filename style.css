@@ -1851,3 +1851,9 @@ footer {
     padding: 28px 20px;
   }
 }
+.offer-validity {
+  text-align: center;
+  color: #b8860b;
+  font-weight: 700;
+  margin: 10px 0 25px;
+}
