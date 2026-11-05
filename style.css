@@ -1702,3 +1702,152 @@ footer {
         min-height: 400px;
     }
 }
+/* ================= DIWALI MEGA OFFERS ================= */
+
+.diwali-offers {
+  background: linear-gradient(135deg, #21170e, #493019, #21170e);
+  color: #fff;
+  padding: 85px 7%;
+}
+
+.diwali-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 50px;
+}
+
+.diwali-heading span {
+  color: #f0c975;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.diwali-heading h2 {
+  color: #f5d58b;
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 18px 0;
+}
+
+.diwali-heading p {
+  color: #f5e8d0;
+  line-height: 1.8;
+}
+
+.diwali-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.diwali-card {
+  position: relative;
+  overflow: hidden;
+  background: #fffaf0;
+  color: #302216;
+  border: 1px solid #d5ad60;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: .3s ease;
+}
+
+.diwali-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.diwali-card.featured {
+  background: #f8e5b8;
+  border: 2px solid #e4b64e;
+}
+
+.offer-number {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: rgba(150,100,20,.12);
+  font: bold 55px Georgia, serif;
+}
+
+.offer-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.diwali-card h3 {
+  font: 600 23px Georgia, serif;
+  margin-bottom: 15px;
+}
+
+.diwali-card strong {
+  display: block;
+  color: #a66b12;
+  font: bold 35px Georgia, serif;
+  margin-bottom: 14px;
+}
+
+.diwali-card p {
+  color: #62503b;
+  line-height: 1.8;
+}
+
+.diwali-trust {
+  text-align: center;
+  margin: 50px auto 25px;
+}
+
+.diwali-trust h3 {
+  color: #f5d58b;
+  font: 30px Georgia, serif;
+  margin-bottom: 12px;
+}
+
+.diwali-trust p,
+.diwali-contact p {
+  color: #f5e8d0;
+  line-height: 1.9;
+}
+
+.diwali-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 15px 28px;
+  border-radius: 30px;
+  background: #b8862f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.diwali-btn:hover {
+  background: #25a75a;
+  transform: translateY(-3px);
+}
+
+.diwali-contact {
+  text-align: center;
+  border-top: 1px solid rgba(240,201,117,.35);
+  padding-top: 25px;
+  margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+  .diwali-offers {
+    padding: 60px 5%;
+  }
+
+  .diwali-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diwali-card {
+    padding: 28px 20px;
+  }
+}
