@@ -205,8 +205,21 @@ const jewelleryImages = {
     "images/gold/gents/wrist-watches/wrist-watch-19.jpg",
     "images/gold/gents/wrist-watches/wrist-watch-20.jpg",
  
-]
+],
 
+"hollow-chain": [
+    "images/gold/gents/hollow-chain/hollow-chain-01.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-02.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-03.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-04.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-05.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-06.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-07.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-08.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-09.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-10.jpg",
+    "images/gold/gents/hollow-chain/hollow-chain-11.jpg"
+],
 
     },
 
@@ -1097,6 +1110,7 @@ mangalsutra: [
   "images/gold/ladies/ganthan-pendant/ganthan-pendant-03.jpg",
   "images/gold/ladies/ganthan-pendant/ganthan-pendant-04.jpg"
 ],
+
 // // LONG NECKLACE
 // "long-necklace": [
 //   "images/gold/ladies/long-necklace/long-necklace-01.jpg",
